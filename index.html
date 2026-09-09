@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة Minecraft - HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Minecraft HTML</h1>
+        
+        <div class="game-info">
+            <div class="info-item">
+                <label>الصحة:</label>
+                <div class="health-bar">
+                    <div class="health" id="health"></div>
+                </div>
+                <span id="healthText">10/10</span>
+            </div>
+            <div class="info-item">
+                <label>الجوع:</label>
+                <div class="hunger-bar">
+                    <div class="hunger" id="hunger"></div>
+                </div>
+                <span id="hungerText">10/10</span>
+            </div>
+            <div class="info-item">
+                <label>المستوى:</label>
+                <span id="level">0</span>
+            </div>
+        </div>
+
+        <div class="game-board" id="gameBoard"></div>
+
+        <div class="controls">
+            <h3>التحكم:</h3>
+            <p>⬆️ W - للأعلى</p>
+            <p>⬇️ S - للأسفل</p>
+            <p>⬅️ A - لليسار</p>
+            <p>➡️ D - لليمين</p>
+            <p>🔨 E - الحفر</p>
+            <p>🧱 R - البناء</p>
+            <p>🍎 Space - الأكل</p>
+        </div>
+
+        <div class="inventory">
+            <h3>الحقيبة:</h3>
+            <div id="inventoryContainer"></div>
+        </div>
+
+        <div class="buttons">
+            <button id="restartBtn" onclick="location.reload()">إعادة تشغيل</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

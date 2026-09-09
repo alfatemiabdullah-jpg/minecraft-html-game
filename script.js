@@ -261,8 +261,8 @@ function updateInventory() {
             const div = document.createElement('div');
             div.className = 'inventory-item';
             div.innerHTML = `
-                <div class="inventory-item-icon">${itemEmojis[item]}</div>
-                <div class="inventory-item-count">${gameState.inventory[item]}</div>
+                <div class="inventory-item-icon">${itemEmojis[item]}<\/div>
+                <div class="inventory-item-count">${gameState.inventory[item]}<\/div>
             `;
             div.addEventListener('click', () => buildBlock(item));
             inventoryContainer.appendChild(div);
